@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #c0681f;
+    min-height: 100vh;
+}
+
+.todo-container {
+    background-color: #cc7e25;
+    border-radius: 8px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(228, 125, 8, 0.596);
+    width: 100%;
+}
+
+.bi-list-check {
+    padding-left: 15px;
+    color: white;
+}
+
+#btnAdd {
+    color: white;
+}
+
+.list-group {
+    background-color: #cc7e25;
+    box-shadow: 0 0 10px rgba(228, 125, 8, 0.596);
+}
+
+.list-group-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    word-break: break-word;
+}
+
+.form-check-label {
+    flex-grow: 1;
+}
+
+.delete {
+    margin-left: auto;
+    order: 3;
+}
+
+.edit-icon {
+    order: 2;
+}
+
+
+@media (max-width: 576px) {
+    .todo-container {
+        padding: 15px;
+    }
+    
+    .list-group-item {
+        flex-wrap: wrap;
+    }
+    
+    .form-check-label {
+        width: 100%;
+        margin-left: 25px;
+        margin-bottom: 5px;
+    }
+    
+    .delete, .edit-icon {
+        margin-left: 0;
+    }
+}
